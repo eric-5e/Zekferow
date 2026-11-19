@@ -1,0 +1,209 @@
+---
+name: Governance & Policy Console
+colors:
+  surface: '#f7f9ff'
+  surface-dim: '#cfdbeb'
+  surface-bright: '#f7f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#edf4ff'
+  surface-container: '#e3efff'
+  surface-container-high: '#dde9f9'
+  surface-container-highest: '#d7e4f4'
+  on-surface: '#111d28'
+  on-surface-variant: '#3d4947'
+  inverse-surface: '#26313e'
+  inverse-on-surface: '#e8f2ff'
+  outline: '#6d7a77'
+  outline-variant: '#bcc9c6'
+  surface-tint: '#006a60'
+  primary: '#00685e'
+  on-primary: '#ffffff'
+  primary-container: '#008377'
+  on-primary-container: '#f4fffb'
+  inverse-primary: '#65d9c9'
+  secondary: '#545f6e'
+  on-secondary: '#ffffff'
+  secondary-container: '#d8e3f5'
+  on-secondary-container: '#5a6574'
+  tertiary: '#ae2736'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#d0404c'
+  on-tertiary-container: '#fffbff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#83f6e5'
+  primary-fixed-dim: '#65d9c9'
+  on-primary-fixed: '#00201c'
+  on-primary-fixed-variant: '#005048'
+  secondary-fixed: '#d8e3f5'
+  secondary-fixed-dim: '#bcc7d8'
+  on-secondary-fixed: '#111c29'
+  on-secondary-fixed-variant: '#3d4856'
+  tertiary-fixed: '#ffdad9'
+  tertiary-fixed-dim: '#ffb3b3'
+  on-tertiary-fixed: '#400009'
+  on-tertiary-fixed-variant: '#8f0c23'
+  background: '#f7f9ff'
+  on-background: '#111d28'
+  surface-variant: '#d7e4f4'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  mono-metric-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.02em
+  mono-metric-md:
+    fontFamily: JetBrains Mono
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  mono-code-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '400'
+    lineHeight: 14px
+  label-caps:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-desktop: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system is engineered for mission-critical authorization engines, access tiering, and operational threshold monitoring. The emotional imperative is total absolute clarity, calm authority, and rapid situational awareness under operational pressure. Users must make high-consequence permissioning decisions without visual fatigue, ambiguity, or hesitation.
+
+The aesthetic blends **Modern Precision** with **Engineered Utilitarianism**. High-contrast data fields, surgical spacing, and strict semantic coloring displace decorative excess. Pure white structural containment units sit atop a cool atmospheric slate wash, establishing physical boundaries between policy tiers. Visual affordances prioritize instantaneous state reads: toggles exhibit tangible mechanical certainty, active thresholds glow with regulated energy, and destructive revoke operations carry immediate weight.
+
+## Colors
+
+The palette employs a cool, calibrated hierarchy where color is strictly semantic and reserved for policy status, systemic limits, and destructive boundaries.
+
+- **Background Canvas (Mist - `#E9EEF3`):** An engineered light slate-gray canvas that mitigates screen glare during prolonged audits while providing high contrast against foreground containers.
+- **Surface / Cards (`#FFFFFF`):** Pure white modular units framed with subtle architectural hairline borders (`#E2E8F0` resting, `#CBD5E1` hovered or active).
+- **Primary Text & Dark Structural Anchor (Deep Slate - `#1F2A37`):** Dominant contrast tone for headings, critical parameters, and navigation rails.
+- **Secondary Text & Metadata (Steel - `#6B7785`):** Secondary values, structural table headers, timestamp metadata, and disabled iconography.
+- **Primary / Active Accent (Control Teal - `#0F9D8F`):** Used strictly for permissive states ("Allowed", "Granted"), system capacity gauges within bounds, active switch rails, and standard commit actions.
+- **Alert / Destructive Accent (Revoke Red - `#D64550`):** Dedicated exclusively to breached quotas, revoked role states, threshold drop zones, and critical confirmation dialogs.
+
+## Typography
+
+The typographic engine bifurcates into two distinct functional disciplines:
+
+1. **System Prose & Controls (Plus Jakarta Sans):** Geometric, neutral, and highly legible across dense administrative views. Its balanced geometry maintains readability across multi-level nested permission trees and dense form fields.
+2. **Numeric Limits, Currencies, Quotas & Telemetry (JetBrains Mono):** Monospaced type delivers strict tabular lining. Every integer, percentage, latency timestamp, and API balance aligns predictably across column grids, eliminating optical scanning drift during limit audits.
+
+All micro-labels, state chips, and data table headers use `label-caps` set in uppercase JetBrains Mono with expanded letter tracking to instantly denote structural categorization.
+
+## Layout & Spacing
+
+The layout is grounded in a 12-column responsive fluid grid designed for density without visual congestion. 
+
+- **Desktop (>= 1280px):** 12-column grid, `margin-desktop` (2rem / 32px), `gutter-desktop` (1.5rem / 24px). Sidebar navigations remain fixed at 280px; main viewport flexes to display parallel data tables and audit side-panels simultaneously.
+- **Tablet (768px - 1279px):** 8-column layout, `gutter` (1rem / 16px), collapsible side drawers. Complex permission matrices switch to horizontal scroll boundaries with sticky row definitions.
+- **Mobile (< 768px):** 4-column layout, `margin` (1rem / 16px). All dashboard cards stack vertically; multi-variable policy sliders compress into single-value touch-steppers.
+
+Layout blocks rely on `space-md` (16px) for interior component isolation and `space-lg` (24px) for logical grouping boundaries within card containers.
+
+## Elevation & Depth
+
+This system avoids heavy drop shadows in favor of **Tonal Layering combined with Low-Contrast Outlines** to preserve an objective, instrumentation-grade feel.
+
+- **Level 0 (App Shell):** Mist canvas (`#E9EEF3`), non-elevated, absorbs background noise.
+- **Level 1 (Panels & Cards):** Pure White surface (`#FFFFFF`) framed by a calibrated 1px hairline border (`#E2E8F0`). A faint ambient boundary shadow (`0 1px 3px 0 rgba(31, 42, 55, 0.04)`) separates it from the canvas.
+- **Level 2 (Hover States & Dropdowns):** Subtle upward elevation with an expanded boundary tint (`0 4px 12px -2px rgba(31, 42, 55, 0.08)`) and border color transition to `#CBD5E1`.
+- **Level 3 (Modals & Confirmation Drawers):** High-priority focus layers utilizing `0 20px 25px -5px rgba(31, 42, 55, 0.12), 0 8px 10px -6px rgba(31, 42, 55, 0.04)` over a frosted backdrop (`rgba(31, 42, 55, 0.4)` with 4px backdrop blur).
+
+## Shapes
+
+The interface balances modern ergonomics with high-density enterprise architecture through precise 12px card framing and strict internal scaling:
+
+- **Cards & Data Panels:** Exact 12px radius (`rounded-lg` token), producing friendly yet disciplined corner profiles.
+- **Inputs, Buttons, and Table Blocks:** 8px radius (`roundedness: 2`), ensuring consistent touch targets and alignment alongside numeric tables.
+- **Status Indicators, Pill Tags & Interactive Toggles:** Fully rounded pill shapes (`9999px`) to immediately visually differentiate dynamic operational state tokens from square-cornered structural containers.
+
+## Components
+
+### Buttons
+- **Primary Commit / Allow:** Control Teal background (`#0F9D8F`), crisp white text, 8px border radius, 40px standard height. Subtle hover shift to `#0B8276`.
+- **Destructive / Revoke Trigger:** Revoke Red background (`#D64550`), crisp white text. Includes a built-in pre-flight confirmation: when triggered, the button engages a distinct horizontal 4px shake transition (`animation: shake 0.25s ease-in-out double`) before revealing an immediate cancel/commit state.
+- **Secondary / Ghost:** Transparent background, 1px border (`#CBD5E1`), Deep Slate text (`#1F2A37`), hovering to Mist tint (`#F1F5F9`).
+
+### Interactive Gauges & Limit Bars
+- **Radial Quota Gauges:** SVG circular tracks with `#E2E8F0` backgrounds and high-contrast dynamic stroke fills. Teal (`#0F9D8F`) indicates usage up to 85%; shifts cleanly to Revoke Red (`#D64550`) once reaching or breaching quota thresholds. Animated via CSS `stroke-dashoffset 0.6s cubic-bezier(0.16, 1, 0.3, 1)`.
+- **Linear Meter Bars:** 8px track height with fully rounded caps. Dual-limit indicator flags marked along the track using vertical 2px ticks in Deep Slate.
+
+### Tactile Toggle Switches
+- **Track:** 48px width, 26px height, rounded-full. Inactive state: `#CBD5E1`. Active state: `#0F9D8F`. Smooth color transition over 200ms.
+- **Thumb:** 20px pure white circle with an engineered micro-shadow (`0 2px 4px rgba(31, 42, 55, 0.2)`). Slides 22px across track with tactile ease-out curve.
+
+### Status Indicator Chips
+- High-visibility pill containers with uppercase mono labels.
+- **Allowed / Active:** Pale mint fill (`#E6F6F4`), dark teal text (`#0A685F`), anchored by a 6px pulsing green-teal dot indicator with soft radial blur.
+- **Revoked / Over-Limit:** Pale rose fill (`#FDE8E9`), deep crimson text (`#9C1C26`), anchored by a static sharp red dot indicator.
+
+### Input Fields & Sliders
+- Input fields display an `#E2E8F0` hairline boundary, `#FFFFFF` fill, and `#1F2A37` input text. Focus states illuminate an active 2px outer border in `#0F9D8F` with no offset outline.
+- Range limit sliders feature an active Teal fill track and a 16px white thumb rimmed with 2px Control Teal border.
+
+### Cards & Matrix Panels
+- Built strictly on `#FFFFFF` backgrounds with 12px radii. Internal sections are separated by 1px horizontal `#E2E8F0` dividers, never floating borders. Card headers house the categorical metadata on the left and the primary state toggle or limit gauge on the right.

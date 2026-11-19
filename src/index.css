@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-mist: #E9EEF3;
+  --color-slate-deep: #1F2A37;
+  --color-steel: #6B7785;
+  --color-teal-control: #0F9D8F;
+  --color-teal-control-hover: #0B8276;
+  --color-red-revoke: #D64550;
+  --color-red-revoke-hover: #BD343F;
+  --color-hairline: #E2E8F0;
+  --color-hairline-active: #CBD5E1;
+  --color-mint-bg: #E6F6F4;
+  --color-mint-text: #0A685F;
+  --color-rose-bg: #FDE8E9;
+  --color-rose-text: #9C1C26;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #E9EEF3;
+    color: #1F2A37;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #E9EEF3;
+    color: #1F2A37;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes zf-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+}
+
+.animate-zf-shake {
+  animation: zf-shake 0.25s ease-in-out 2;
+}
+
+/* Range slider styling matching Control Teal specification */
+input[type="range"].zf-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"].zf-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #FFFFFF;
+  border: 2px solid #0F9D8F;
+  box-shadow: 0 1px 3px rgba(31, 42, 55, 0.18);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].zf-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.08);
+}
+
+input[type="range"].zf-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #FFFFFF;
+  border: 2px solid #0F9D8F;
+  box-shadow: 0 1px 3px rgba(31, 42, 55, 0.18);
+  cursor: pointer;
+}
